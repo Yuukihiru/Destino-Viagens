@@ -1,0 +1,506 @@
+	<!DOCTYPE html>
+	<html lang="zxx" class="no-js">
+	<head>
+	<!-- Meta Específico para Dispositivos Móveis -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Ícone -->
+	<link rel="shortcut icon" href="img/fav.png">
+	<!-- Autor -->
+	<meta name="author" content="colorlib">
+	<!-- Descrição Meta -->
+	<meta name="description" content="">
+	<!-- Palavras-chave Meta -->
+	<meta name="keywords" content="">
+	<!-- Conjunto de caracteres do Meta -->
+	<meta charset="UTF-8">
+	<!-- Título do Site -->
+	<title>Destino Viagens</title>
+
+
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+			<!--
+			CSS
+			============================================= -->
+			<link rel="stylesheet" href="css/linearicons.css">
+			<link rel="stylesheet" href="css/font-awesome.min.css">
+			<link rel="stylesheet" href="css/bootstrap.css">
+			<link rel="stylesheet" href="css/magnific-popup.css">
+			<link rel="stylesheet" href="css/jquery-ui.css">				
+			<link rel="stylesheet" href="css/nice-select.css">							
+			<link rel="stylesheet" href="css/animate.min.css">
+			<link rel="stylesheet" href="css/owl.carousel.css">				
+			<link rel="stylesheet" href="css/main.css">
+			
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/i18n/datepicker-pt-BR.min.js"></script>
+			<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+			<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+			<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+		</head>
+		
+		<body>	
+
+			<header id="header">
+
+				<div class="container main-menu">
+					<div class="row align-items-center justify-content-between d-flex">
+				      <div id="logo">
+				        <a href="index.html"><img src="img/logo.png" alt="" title="" /></a>
+				      </div>
+				      <nav id="nav-menu-container">
+				        <ul class="nav-menu">
+				          <li><a href="index.html">Reservas</a></li>				          
+				          <li><a href="pacotes.html">Pacotes</a></li>
+				          <li><a href="hospedagens.html">Hospedagens</a></li>
+						  <li><a href="sobre.html">Sobre</a></li>
+						   <ul>
+							</li>					                		
+				            </ul>
+				          </li>					          					          		          
+				          <li><a href="contatos.html">Contatos</a></li>
+				        </ul>
+				      </nav><!-- #nav-menu-container -->					      		  
+					</div>
+				</div>
+			</header><!-- #header -->
+			
+			<!-- Começo da área do banner -->
+			<section class="banner-area relative">
+				<div class="overlay overlay-bg"></div>				
+				<div class="container">
+					<div class="row fullscreen align-items-center justify-content-between">
+						<div class="col-lg-6 col-md-6 banner-left">
+							<h6 class="text-white">Transformando sonhos em destinos memoráveis</h6>
+							<h1 class="text-white">Descubra Seu Destino</h1>
+							<p class="text-white">
+								Descubra as melhores ofertas de passagens, hotéis e pacotes de viagens exclusivos. Com Destino, você pode personalizar sua jornada de acordo com suas preferências e orçamento, garantindo uma experiência única e inesquecível.
+							</p>
+							<a href="pacotes.html" class="primary-btn text-uppercase">Iniciar</a>
+						</div>
+						<div class="col-lg-4 col-md-6 banner-right">
+							<ul class="nav nav-tabs" id="myTab" role="tablist">
+							  <li class="nav-item">
+							    <a class="nav-link active" id="flight-tab" data-toggle="tab" href="#flight" role="tab" aria-controls="flight" aria-selected="true">VOO</a>
+							  </li>
+							  <li class="nav-item">
+							    <a class="nav-link" id="hotel-tab" data-toggle="tab" href="#hotel" role="tab" aria-controls="hotel" aria-selected="false">HOTEL</a>
+							  </li>
+							  <li class="nav-item">
+							    <a class="nav-link" id="holiday-tab" data-toggle="tab" href="#holiday" role="tab" aria-controls="holiday" aria-selected="false">CARRO</a>
+							  </li>
+							</ul>
+							<div class="tab-content" id="myTabContent">
+							  <div class="tab-pane fade show active" id="flight" role="tabpanel" aria-labelledby="flight-tab">
+								<form class="form-wrap">
+									<select class="form-control" name="origem" onchange="if(this.value === 'x') { this.options[0].text = 'Local de Origem'; this.options[0].selected = true; } else { this.options[0].text = ''; }">
+										<option value="" disabled selected hidden>Local de Origem</option>
+										<option value="x">- - -</option>
+										<option value="brasilia">Brasília, DF</option>
+										<option value="bangkok">Rio de Janeiro, RJ</option>
+										<option value="cidade_cabo">São Paulo, SP</option>
+									  </select>
+
+									<select class="form-control" name="destino" onchange="if(this.value === 'x') { this.options[0].text = 'Selecione um Destino'; this.options[0].selected = true; } else { this.options[0].text = ''; }">
+										<option value="" disabled selected hidden>Selecione um Destino</option>
+										<option value="x">- - -</option>
+										<option value="amsterda">Amsterdã (HOL)</option>
+										<option value="bangkok">Bangkok (TAL)</option>
+										<option value="cidade_cabo">Cidade do Cabo (AFS)</option>
+										<option value="dubai">Dubai (EAU)</option>
+										<option value="gize">Gizé (EGI)</option>
+										<option value="istambul">Istambul (TUR)</option>
+										<option value="jerusalem">Jerusalém (ISR)</option>
+										<option value="londres">Londres (GBR)</option>
+										<option value="los_angeles">Los Angeles (EUA)</option>
+										<option value="machu_picchu">Machu Picchu (PER)</option>
+										<option value="marraquexe">Marraquexe (MAR)</option>
+										<option value="nassau">Nassau (BHS)</option>
+										<option value="nova_york">Nova York (EUA)</option>
+										<option value="paris">Paris (FRA)</option>
+										<option value="quioto">Quioto (JAP)</option>
+										<option value="sydney">Sydney (AUS)</option>
+										<option value="vancouver">Vancouver (CAN)</option>
+										<option value="xangai">Xangai (CHN)</option>
+									  </select>
+									  
+									  
+									  
+
+									<input type="text" class="form-control date-picker" name="ida" placeholder="Data da Viagem " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Data da Viagem '">
+									<input type="text" class="form-control date-picker" name="volta" placeholder="Data do Retorno " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Data do retorno '">
+									<input type="number" min="1" max="99" class="form-control" name="pessoas" placeholder="Número de Pessoas " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Número de Pessoas '">						
+									<a href="#" class="primary-btn text-uppercase">Encontrar Voos</a>									
+								</form>
+							  </div>
+							  <div class="tab-pane fade" id="hotel" role="tabpanel" aria-labelledby="hotel-tab">
+								<form class="form-wrap">
+									<select class="form-control" name="destino" onchange="if(this.value === 'x') { this.options[0].text = 'Selecione um Destino'; this.options[0].selected = true; } else { this.options[0].text = ''; }">
+										<option value="" disabled selected hidden>Selecione um Destino</option>
+										<option value="x">- - -</option>
+										<option value="amsterda">Amsterdã (HOL)</option>
+										<option value="bangkok">Bangkok (TAL)</option>
+										<option value="cidade_cabo">Cidade do Cabo (AFS)</option>
+										<option value="dubai">Dubai (EAU)</option>
+										<option value="gize">Gizé (EGI)</option>
+										<option value="istambul">Istambul (TUR)</option>
+										<option value="jerusalem">Jerusalém (ISR)</option>
+										<option value="londres">Londres (GBR)</option>
+										<option value="los_angeles">Los Angeles (EUA)</option>
+										<option value="machu_picchu">Machu Picchu (PER)</option>
+										<option value="marraquexe">Marraquexe (MAR)</option>
+										<option value="nassau">Nassau (BHS)</option>
+										<option value="nova_york">Nova York (EUA)</option>
+										<option value="paris">Paris (FRA)</option>
+										<option value="quioto">Quioto (JAP)</option>
+										<option value="sydney">Sydney (AUS)</option>
+										<option value="vancouver">Vancouver (CAN)</option>
+										<option value="xangai">Xangai (CHN)</option>
+									  </select>
+									  									
+									<input type="text" class="form-control date-picker" name="in" placeholder="Check-in " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Check-in '">
+									<input type="text" class="form-control date-picker" name="out" placeholder="Check-out " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Check-out '">
+									<input type="number" min="1" max="20" class="form-control" name="quartos" placeholder="Número de Quartos " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Número de Quartos '">	
+									<input type="number" min="1" max="20" class="form-control" name="pessoas" placeholder="Número de Pessoas " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Número de Pessoas '">				
+									<a href="#" class="primary-btn text-uppercase">Encontrar Hotéis</a>									
+								</form>							  	
+							  </div>
+							  <div class="tab-pane fade" id="holiday" role="tabpanel" aria-labelledby="holiday-tab">
+								<form class="form-wrap">
+									<select class="form-control" name="destino" onchange="if(this.value === 'x') { this.options[0].text = 'Selecione um Destino'; this.options[0].selected = true; } else { this.options[0].text = ''; }">
+										<option value="" disabled selected hidden>Selecione um Destino</option>
+										<option value="x">- - -</option>
+										<option value="amsterda">Amsterdã (HOL)</option>
+										<option value="bangkok">Bangkok (TAL)</option>
+										<option value="cidade_cabo">Cidade do Cabo (AFS)</option>
+										<option value="dubai">Dubai (EAU)</option>
+										<option value="gize">Gizé (EGI)</option>
+										<option value="istambul">Istambul (TUR)</option>
+										<option value="jerusalem">Jerusalém (ISR)</option>
+										<option value="londres">Londres (GBR)</option>
+										<option value="los_angeles">Los Angeles (EUA)</option>
+										<option value="machu_picchu">Machu Picchu (PER)</option>
+										<option value="marraquexe">Marraquexe (MAR)</option>
+										<option value="nassau">Nassau (BHS)</option>
+										<option value="nova_york">Nova York (EUA)</option>
+										<option value="paris">Paris (FRA)</option>
+										<option value="quioto">Quioto (JAP)</option>
+										<option value="sydney">Sydney (AUS)</option>
+										<option value="vancouver">Vancouver (CAN)</option>
+										<option value="xangai">Xangai (CHN)</option>
+									  </select>
+
+									<input type="text" class="form-control" name="local" placeholder="Local de Coleta " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Local de Coleta '">
+									<input type="text" class="form-control date-picker" name="coleta" placeholder="Data de Coleta " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Data de Coleta '">
+									<input type="text" class="form-control date-picker" name="devolucao" placeholder="Data de Devolução " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Data de Devolução '">						
+									<select class="form-control" name="horario" onchange="if(this.value === 'x') { this.options[0].text = 'Horário de Devolução'; this.options[0].selected = true; } else { this.options[0].text = ''; }">
+										<option value="" disabled selected hidden>Horário de Devolução</option>
+										<option value="x">- - -</option>
+										<option value="07:00hrs">07:00 hrs</option>
+										<option value="07:30hrs">07:30 hrs</option>
+										<option value="08:00hrs">08:00 hrs</option>
+										<option value="08:30hrs">08:30 hrs</option>
+										<option value="09:00hrs">09:00 hrs</option>
+										<option value="09:30hrs">09:30 hrs</option>
+										<option value="10:00hrs">10:00 hrs</option>
+										<option value="10:30hrs">10:30 hrs</option>
+										<option value="11:00hrs">11:00 hrs</option>
+										<option value="11:30hrs">11:30 hrs</option>
+										<option value="12:00hrs">12:00 hrs</option>
+										<option value="12:30hrs">12:30 hrs</option>
+										<option value="13:00hrs">13:00 hrs</option>
+										<option value="13:30hrs">13:30 hrs</option>
+										<option value="14:00hrs">14:00 hrs</option>
+										<option value="14:30hrs">14:30 hrs</option>
+										<option value="15:00hrs">15:00 hrs</option>
+										<option value="15:30hrs">15:30 hrs</option>
+										<option value="16:00hrs">16:00 hrs</option>
+										<option value="16:30hrs">16:30 hrs</option>
+										<option value="17:00hrs">17:00 hrs</option>
+										<option value="17:30hrs">17:30 hrs</option>
+										<option value="18:00hrs">18:00 hrs</option>
+										<option value="18:30hrs">18:30 hrs</option>
+										<option value="19:00hrs">19:00 hrs</option>
+									  </select>					
+									<a href="#" class="primary-btn text-uppercase">Encontrar Carros</a>						
+								</form>							  	
+							  </div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			
+			</section>
+			<!-- Final da área do banner -->
+
+
+
+			<!-- Começo da área de destinos -->
+			<section class="popular-destination-area section-gap">
+				<div class="container">
+		            <div class="row d-flex justify-content-center">
+		                <div class="menu-content pb-70 col-lg-8">
+		                    <div class="title text-center">
+		                        <h1 class="mb-10">Destinos Populares</h1>
+		                        <p>Se você está em busca de aventuras emocionantes, culturas fascinantes e paisagens deslumbrantes, não precisa procurar mais.</p>
+		                    </div>
+		                </div>
+		            </div>						
+					<div class="row">
+						<div class="col-lg-4">
+							<div class="single-destination relative">
+								<div class="thumb relative">
+									<div class="overlay overlay-bg"></div>
+									<img class="img-fluid" src="img/d1.jpg" alt="">
+								</div>
+								<div class="desc">	
+									<a href="https://www.decolar.com/trip/bundle/CIT_926/LON_7380/2023-10-19/2023-10-31/2?package_id=7cac5ed74584a9347a23d80a531a43b79d4f0d9cc40104e39ae6c046bef4fa2e&clickedPrice=BRL_11353&priceDate=1688529795019&offerId=7cac5ed74584a9347a23d80a531a43b79d4f0d9cc40104e39ae6c046bef4fa2e&searchId=bc24e62c3b43498c896eeac802bc2656&locale=pt-BR&tripId=PCf677efdeb4464914ba461e0ba4353b7e28142163" 
+									class="price-btn">R$ 8.501,00</a>			
+									<h4>Londres</h4>
+									<p>Reino Unido</p>			
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="single-destination relative">
+								<div class="thumb relative">
+									<div class="overlay overlay-bg"></div>
+									<img class="img-fluid" src="img/d2.jpg" alt="">
+								</div>
+								<div class="desc">	
+									<a href="https://www.decolar.com/trip/bundle/CIT_926/NYC_7411/2024-02-10/2024-02-17/2?package_id=5eb4acbc7f2cab96c0b60e7adb373bb3b90409a7a7e9ae58ea88182470d634d9&clickedPrice=BRL_5866&priceDate=1688530009011&offerId=5eb4acbc7f2cab96c0b60e7adb373bb3b90409a7a7e9ae58ea88182470d634d9&searchId=c8f0d2b06e324c19bc484e0ded592369&locale=pt-BR" 
+									class="price-btn">R$ 4.737,00</a>			
+									<h4>Nova York</h4>
+									<p>Estados Unidos</p>			
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="single-destination relative">
+								<div class="thumb relative">
+									<div class="overlay overlay-bg"></div>
+									<img class="img-fluid" src="img/d3.jpg" alt="">
+								</div>
+								<div class="desc">	
+									<a href="https://br.memphistours.com/Egito/Egito-Pacotes/Tours-Classicos-viagem-ao-Egito/pacote-egito-2019" 
+									class="price-btn">R$ 6.288,00</a>			
+									<h4>Gizé</h4>
+									<p>Egito</p>			
+								</div>
+							</div>
+						</div>												
+					</div>
+				</div>	
+			</section>
+			<!--Final da área de destinos-->
+			
+
+				<!-- Começo da área de preços -->
+				<section class="price-area section-gap">
+					<div class="container">
+						<div class="row d-flex justify-content-center">
+							<div class="menu-content pb-70 col-lg-8">
+								<div class="title text-center">
+									<h1 class="mb-10">Oferecemos Opções de Pacotes</h1>
+									<p> Você encontrará uma variedade de opções de viagem, todas com uma variedade preços. Queremos que você possa explorar destinos incríveis, criar memórias duradouras e vivenciar experiências enriquecedoras.</p>
+								</div>
+							</div>
+						</div>						
+						<div class="row">
+							<div class="col-lg-4">
+								<div class="single-price">
+									<h4>Pacotes Econômico</h4>
+									<ul class="price-list">
+										<li class="d-flex justify-content-between align-items-center">
+											<span>Gizé (EGI)</span>
+											<a href="#" class="price-btn">R$ 6.288,00</a>
+										</li>
+										<li class="d-flex justify-content-between align-items-center">
+											<span>Londres (GBR)</span>
+											<a href="#" class="price-btn">R$ 8.501,00</a>
+										</li>
+										<li class="d-flex justify-content-between align-items-center">
+											<span>Nova York (EUA)</span>
+											<a href="#" class="price-btn">R$ 4.737,00</a>
+										</li>
+										<li class="d-flex justify-content-between align-items-center">
+											<span>Paris (FRA)</span>
+											<a href="#" class="price-btn">R$ 8.288,00</a>
+										</li>
+										<li class="d-flex justify-content-between align-items-center">
+											<span>Vancouver (CAN)</span>
+											<a href="#" class="price-btn">R$ 7.250,00</a>
+										</li>	
+										<li class="d-flex justify-content-between align-items-center">
+											<span>Xangai (CHN)</span>
+											<a href="#" class="price-btn">R$ 9.000,00</a>
+										</li>														
+									</ul>
+								</div>
+							</div>
+							<div class="col-lg-4">
+								<div class="single-price">
+									<h4>Pacotes de Aventura</h4>
+									<ul class="price-list">
+										<li class="d-flex justify-content-between align-items-center">
+											<span>Gizé (EGI)</span>
+											<a href="#" class="price-btn">R$ 12.576,00</a>
+										</li>
+										<li class="d-flex justify-content-between align-items-center">
+											<span>Londres (GBR)</span>
+											<a href="#" class="price-btn">R$ 17.002,00</a>
+										</li>
+										<li class="d-flex justify-content-between align-items-center">
+											<span>Nova York (EUA)</span>
+											<a href="#" class="price-btn">R$ 13.434,00</a>
+										</li>
+										<li class="d-flex justify-content-between align-items-center">
+											<span>Paris (FRA)</span>
+											<a href="#" class="price-btn">R$ 16.576,00</a>
+										</li>
+										<li class="d-flex justify-content-between align-items-center">
+											<span>Vancouver (CAN)</span>
+											<a href="#" class="price-btn">R$ 14.500,00</a>
+										</li>	
+										<li class="d-flex justify-content-between align-items-center">
+											<span>Xangai (CHN)</span>
+											<a href="#" class="price-btn">R$ 19.760,00</a>
+										</li>														
+									</ul>
+								</div>
+							</div>
+							<div class="col-lg-4">
+								<div class="single-price">
+									<h4>Pacotes de Luxo</h4>
+									<ul class="price-list">
+										<li class="d-flex justify-content-between align-items-center">
+											<span>Gizé (EGI)</span>
+											<a href="#" class="price-btn">R$ 25.252,00</a>
+										</li>
+										<li class="d-flex justify-content-between align-items-center">
+											<span>Londres (GBR)</span>
+											<a href="#" class="price-btn">R$ 34.004,00</a>
+										</li>
+										<li class="d-flex justify-content-between align-items-center">
+											<span>Nova York (EUA)</span>
+											<a href="#" class="price-btn">R$ 28.948,00</a>
+										</li>
+										<li class="d-flex justify-content-between align-items-center">
+											<span>Paris (FRA)</span>
+											<a href="#" class="price-btn">R$ 33.452,00</a>
+										</li>
+										<li class="d-flex justify-content-between align-items-center">
+											<span>Vancouver (CAN)</span>
+											<a href="#" class="price-btn">R$ 29.000,00</a>
+										</li>	
+										<li class="d-flex justify-content-between align-items-center">
+											<span>Xangai (CHN)</span>
+											<a href="#" class="price-btn">R$ 39.520,00</a>
+										</li>														
+									</ul>
+								</div>
+							</div>												
+						</div>
+					</div>	
+				</section>
+				<!-- Final da área de preços -->
+			
+		<!-- Começo da área do rodapé -->		
+		<footer class="footer-area section-gap">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-3 col-md-6 col-sm-6">
+						<div class="single-footer-widget text-center">
+							<h6>Sobre Agência</h6>
+							<p class="justificado">
+								 Telefone:
+								<br>
+								 (84) 4005-4107
+								<br>
+								<br>
+								 E-mail:
+								<br>
+								 destinoviagens@outlook.com
+							</p>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6">
+						<div class="single-footer-widget text-center">
+							<h6>Companhias Aéreas</h6>
+							<div class="row">
+								<div class="col">
+									<ul>
+										<li><a href="https://www.voeazul.com.br/br/pt/home">Azul</a></li>
+										<li><a href="https://www.voegol.com.br/">Gol</a></li>
+										<li><a href="https://www.latamairlines.com/br/pt">Latam</a></li>
+										<li><a href="https://br.trip.com/flights/">Trip</a></li>
+									</ul>
+								</div>
+								<div class="col">
+									<ul>
+										<li><a href="https://wwws.airfrance.com.br/">Air France</a></li>
+										<li><a href="https://www.iberia.com/br/?language=pt&gclid=CjwKCAjw2K6lBhBXEiwA5RjtCeNoSH5FvNyG2DbzWtYQaNsXOoPeBHrcRzdo-XvUkvUpv6W6uz7OihoC8eoQAvD_BwE">Iberia</a></li>
+										<li><a href="https://www.lufthansa.com/br/pt/local-page/lufthansa-in-brazil">Lufthansa</a></li>
+										<li><a href="https://www.united.com/pt-br/voos-de-brasil">United</a></li>
+									</ul>
+								</div>										
+							</div>							
+						</div>
+					</div>							
+					<div class="col-lg-3 col-md-6 col-sm-6">
+						<div class="single-footer-widget text-center">
+							<h6>Vincular-se</h6>
+							<p>
+								Vincule seu endereço E-mail para receber ofertas promocionais da Destino.									
+							</p>								
+							<div id="mc_embed_signup">
+								<form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscription relative">
+									<div class="input-group d-flex flex-row justify-content-center">
+										<input name="EMAIL" placeholder="Endereço de E-mail" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enedereço de E-mail '" required="" type="email">
+										<button class="btn bb-btn"><span class="lnr lnr-location"></span></button>		
+									</div>									
+									<div class="mt-10 info"></div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+		
+				<div class="row footer-bottom d-flex justify-content-between align-items-center">
+					<p class="col-lg-8 col-sm-12 footer-text m-0">
+						
+					Destino Viagens Internacionais S.A | Todos os direitos reservados
+					&copy;<script>document.write(new Date().getFullYear());</script>
+					</p>
+					<div class="col-lg-4 col-sm-12 footer-social d-flex justify-content-center justify-content-lg-end">
+						<a href="https://pt-br.facebook.com/"><i class="fa fa-facebook"></i></a>
+						<a href="https://twitter.com/i/flow/login?redirect_after_login=%2Flogin%3Flang%3Dpt"><i class="fa fa-twitter"></i></a>
+						<a href="https://dribbble.com/"><i class="fa fa-dribbble"></i></a>
+						<a href="https://www.behance.net/"><i class="fa fa-behance"></i></a>
+					</div>
+				</div>
+			</div>
+		</footer>
+			<!-- Final da área do rodapé -->	
+			
+			
+	
+
+
+			<script src="js/vendor/jquery-2.2.4.min.js"></script>
+			<script src="js/popper.min.js"></script>
+			<script src="js/vendor/bootstrap.min.js"></script>			
+			<script src="https://maps.googleapis.com/maps/api/js?sensor=false&callback=myMap"></script>	
+ 			<script src="js/jquery-ui.js"></script>					
+  			<script src="js/easing.min.js"></script>			
+			<script src="js/hoverIntent.js"></script>
+			<script src="js/superfish.min.js"></script>	
+			<script src="js/jquery.ajaxchimp.min.js"></script>
+			<script src="js/jquery.magnific-popup.min.js"></script>						
+			<script src="js/jquery.nice-select.min.js"></script>					
+			<script src="js/owl.carousel.min.js"></script>							
+			<script src="js/mail-script.js"></script>	
+			<script src="js/main.js"></script>	
+		</body>
+	</html>
